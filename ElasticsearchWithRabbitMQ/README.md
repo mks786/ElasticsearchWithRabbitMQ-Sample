@@ -50,5 +50,17 @@ rabbitmqctl set_permissions -p / Kashif ".*" ".*" ".*"
 # Elasticsearch
 [Download Elasticsearch in your system](https://www.elastic.co/downloads/)
 Download the following from there
-1. Kibana
-2. 
+1. Elasticsearch
+2. Kibana
+
+##Note: While testing or executing must check RabbitMQ, Elasticsearch server must be runing.
+
+
+#Instruction for the Execution
+1. First execute: ElasticMicroRabbitMQ.Elasticsearch.ElasticDBSetup 
+...It will create Elasticsearch => Indices => Types => Documents with Properties
+2. Right click on the main solution file and select properties.
+3. In Properties select multiple startup projects
+4. Then select projects to startup given below: You need to change the value from the dropdown besides the project name in Action column to Start.
+..1. ElasticMicroRabbitMQ.HRM.API
+..2. ElasticMicroRabbitMQ.Transfer.API
