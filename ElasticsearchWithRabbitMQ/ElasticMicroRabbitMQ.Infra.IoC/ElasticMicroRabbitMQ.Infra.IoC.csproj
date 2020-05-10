@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ElasticMicroRabbitMQ.Domain.Core\ElasticMicroRabbitMQ.Domain.Core.csproj" />
+    <ProjectReference Include="..\ElasticMicroRabbitMQ.HRM.Application\ElasticMicroRabbitMQ.HRM.Application.csproj" />
+    <ProjectReference Include="..\ElasticMicroRabbitMQ.HRM.Domain\ElasticMicroRabbitMQ.HRM.Domain.csproj" />
+    <ProjectReference Include="..\ElasticMicroRabbitMQ.Infra.Bus\ElasticMicroRabbitMQ.Infra.Bus.csproj" />
+    <ProjectReference Include="..\ElasticMicroRabbitMQ.Transfer.Application\ElasticMicroRabbitMQ.Transfer.Application.csproj" />
+    <ProjectReference Include="..\ElasticMicroRabbitMQ.Transfer.Domain\ElasticMicroRabbitMQ.Transfer.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

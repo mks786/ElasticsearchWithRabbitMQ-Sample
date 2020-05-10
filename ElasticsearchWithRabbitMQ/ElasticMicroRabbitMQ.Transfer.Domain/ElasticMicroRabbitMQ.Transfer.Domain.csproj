@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ElasticMicroRabbitMQ.Common.Model\ElasticMicroRabbitMQ.Common.Model.csproj" />
+    <ProjectReference Include="..\ElasticMicroRabbitMQ.Domain.Core\ElasticMicroRabbitMQ.Domain.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="CommandHandler\" />
+    <Folder Include="Commands\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Elasticsearch.Net" Version="7.6.2" />
+    <PackageReference Include="NEST" Version="7.6.2" />
+  </ItemGroup>
+
+</Project>

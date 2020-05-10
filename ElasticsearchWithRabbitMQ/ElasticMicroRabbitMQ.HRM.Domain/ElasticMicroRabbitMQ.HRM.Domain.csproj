@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="EventHandlers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Elasticsearch.Net" Version="7.6.2" />
+    <PackageReference Include="NEST" Version="7.6.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ElasticMicroRabbitMQ.Common.Model\ElasticMicroRabbitMQ.Common.Model.csproj" />
+    <ProjectReference Include="..\ElasticMicroRabbitMQ.Domain.Core\ElasticMicroRabbitMQ.Domain.Core.csproj" />
+  </ItemGroup>
+
+</Project>
