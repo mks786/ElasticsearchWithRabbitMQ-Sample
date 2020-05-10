@@ -53,10 +53,10 @@ Download the following from there
 1. Elasticsearch
 2. Kibana
 
-##Note: While testing or executing must check RabbitMQ, Elasticsearch server must be runing.
+## Note: While testing or executing must check RabbitMQ, Elasticsearch server must be runing.
 
 
-#Instruction for the Execution
+# Instruction for the Execution
 1. First execute: ElasticMicroRabbitMQ.Elasticsearch.ElasticDBSetup 
 ...It will create Elasticsearch => Indices => Types => Documents with Properties
 2. Right click on the main solution file and select properties.
