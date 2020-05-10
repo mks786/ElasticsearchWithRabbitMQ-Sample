@@ -62,5 +62,5 @@ Download the following from there
 2. Right click on the main solution file and select properties.
 3. In Properties select multiple startup projects
 4. Then select projects to startup given below: You need to change the value from the dropdown besides the project name in Action column to Start.
-..1. ElasticMicroRabbitMQ.HRM.API
-..2. ElasticMicroRabbitMQ.Transfer.API
+... ElasticMicroRabbitMQ.HRM.API
+... ElasticMicroRabbitMQ.Transfer.API
