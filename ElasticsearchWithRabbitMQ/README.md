@@ -58,9 +58,9 @@ Download the following from there
 
 # Instruction for the Execution
 1. First execute: ElasticMicroRabbitMQ.Elasticsearch.ElasticDBSetup 
-...It will create Elasticsearch => Indices => Types => Documents with Properties
+.1. It will create Elasticsearch => Indices => Types => Documents with Properties
 2. Right click on the main solution file and select properties.
 3. In Properties select multiple startup projects
 4. Then select projects to startup given below: You need to change the value from the dropdown besides the project name in Action column to Start.
-... ElasticMicroRabbitMQ.HRM.API
-... ElasticMicroRabbitMQ.Transfer.API
+.1. ElasticMicroRabbitMQ.HRM.API
+.1. ElasticMicroRabbitMQ.Transfer.API
