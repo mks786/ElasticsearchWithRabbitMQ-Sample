@@ -51,7 +51,6 @@ rabbitmqctl set_permissions -p / Kashif ".*" ".*" ".*"
 [Download Elasticsearch in your system](https://www.elastic.co/downloads/)
 Download the following from there
 1. Elasticsearch
-2. Kibana
 
 ## Note: While testing or executing must check RabbitMQ, Elasticsearch server must be runing.
 
