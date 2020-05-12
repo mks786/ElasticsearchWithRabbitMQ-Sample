@@ -52,9 +52,9 @@ namespace ElasticMicroRabbitMQ.Transfer.Domain.Repositories
             ConnectionSettings settings = new ConnectionSettings(new Uri("http://localhost:9200"));
             settings.DefaultIndex("employeestore");
             ElasticClient esClient = new ElasticClient(settings);
-            var indexName = Indices.Index("employeestore");
-            var delRequest = new DeleteRequest(indexName, id);
-            delRequest.Refresh = Elasticsearch.Net.Refresh.True;
+            esClient.Delete<Employee>(new Id(id));
+            //var delRequest = new DeleteRequest(indexName, id);
+            //delRequest.Refresh = Elasticsearch.Net.Refresh.True;
             esClient.Delete(new DocumentPath<Employee>(new Id(id)));
         }
     }

@@ -23,6 +23,14 @@ namespace ElasticMicroRabbitMQ.Elasticsearch.ElasticDBSetup
             settings.DefaultIndex("employeestore");
             ElasticClient client = new ElasticClient(settings);
             client.Indices.Delete(Indices.Index("employeestore"));
+            //client.Indices.Delete(Indices.Index("kibana_sample_data_flights"));
+            //client.Indices.Delete(Indices.Index(".kibana_1 "));
+            //client.Indices.Delete(Indices.Index("kibana_sample_data_logs"));
+            //client.Indices.Delete(Indices.Index("employee"));
+            //client.Indices.Delete(Indices.Index("index"));
+            //client.Indices.Delete(Indices.Index(".apm-agent-configuration "));
+            //client.Indices.Delete(Indices.Index("kibana_sample_data_ecommerce"));
+            //client.Indices.Delete(Indices.Index(".kibana_task_manager_1"));
             var indexSettings = client.Indices.Exists("employeestore");
             if (!indexSettings.Exists)
             {
